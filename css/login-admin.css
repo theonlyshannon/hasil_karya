@@ -1,0 +1,167 @@
+body, html {
+    height: 100%;
+     background-color: #FFF;
+}
+.card-image img {
+    width: 162px;
+    height: 87px;
+}
+.card-title {
+    font-family: poppins;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.login-card {
+    width: 100%;
+    max-width: 563px;
+    padding: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+}
+.login-container {
+    background-image: url('/public/login/bg-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.login-card {
+    width: 100%;
+    max-width: 600px; /* Card size */
+    padding: 20px;
+    box-shadow: 10px 16px 45px -16px rgba(0,0,0,0.64);
+}
+.form-label {
+    font-family: inter;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-custom {
+    display: block; 
+    font-family: poppins;
+    width: 100%;    
+    padding: 10px;  
+    text-align: center; 
+    background-color: #135155; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.divider {
+    width: 5px;
+    background-color: #FFC51E;
+    margin-right: 20px;
+    height: 185px; /* Menyesuaikan tinggi dengan container email dan password */
+    align-self: stretch; /* Memastikan divider mengisi seluruh tinggi input */
+}
+
+.flex-grow-1 {
+    flex-grow: 1; /* Membuat form input email dan password menempati sisa ruang */
+}
+
+.bg-custom {
+    background-color: #0F7C83; /* Contoh warna latar belakang */
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+
+/* Perbesar input field */
+input[type="email"], input[type="password"] {
+    height: 50px; /* Sesuaikan ukuran tinggi */
+    font-size: 18px; /* Sesuaikan ukuran font */
+    padding: 10px; /* Sesuaikan padding */
+}
+.input-group .form-control placeholder {
+    flex: 1 1 auto; /* Pastikan input mengisi space yang tersisa */
+    height: 50px; /* Tetapkan tinggi yang sama dengan input */
+}
+.form-check-label{ 
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: medium;
+    color: #4A606B;
+}
+.forgot-password-label {
+    color: #0F7C83;
+    font-family: poppins;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: medium;
+}
+.forgot-password-label:hover {
+    color: #4A606B;
+}
+.input-group .btn {
+    height: 50px; /* Samakan tinggi tombol dengan input */
+}
+
+.container-fluid {
+    padding: 0; 
+    margin: 0; 
+}
+
+.row {
+    margin: 0; 
+}
+
+.glass-card {
+    background: rgba(190, 190, 190, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.glass-card .card-body {
+    color: #fff; 
+    text-shadow: 9px 14px 86px 0px rgba(0,0,0,0.42); 
+}
+
+.floating-card {
+    animation: floating 3s ease-in-out infinite; 
+}
+
+/* Hover Effect */
+.floating-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.img-background {
+    position: absolute; /* Membuat gambar tidak memengaruhi layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Untuk memastikan gambar sesuai dengan container */
+    opacity: 0.7; /* Opsional: Menambahkan transparansi */
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px); /* Posisi awal */
+    }
+    50% {
+        transform: translateY(-10px); /* Naik ke atas */
+    }
+    100% {
+        transform: translateY(0px); /* Kembali ke posisi awal */
+    }
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        max-width: 90; /* Responsive width for smaller screens */
+    }
+}

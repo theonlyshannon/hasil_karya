@@ -1,0 +1,174 @@
+:root {
+  --color-gray-100: #f8f9fa;
+  --color-link: #0f7c83;
+  --padding-base: 16px;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* Global reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+}
+
+body {
+  padding-top: 8rem;
+  margin-top: 0;
+  font-family: var(--font-inter);
+}
+
+/* Navbar styling */
+nav,
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
+  backdrop-filter: blur(56px);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  padding: 24px 80px;
+  width: 100%;
+}
+
+.navbar-brand {
+  padding-left: 2rem;
+}
+
+.navbar-nav {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.btn-primary {
+  margin-right: 2rem;
+}
+
+.btn-custom {
+  margin-right: 1rem;
+  background-color: #135155;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  min-width: 53px;
+}
+
+.btn-custom:hover {
+  background-color: #0f4141;
+  color: white;
+}
+
+.navbar-nav,
+.nav-item {
+  font-weight: bold;
+  color: #135155;
+}
+
+.dropdown-menu {
+  padding: 8px;
+  gap: 10px;
+}
+
+.dropdown-menu,
+.dropdown-item {
+  color: #4a606b;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* Footer styling */
+footer {
+  background-color: #fff;
+  font-family: var(--font-inter);
+  padding: 16px;
+}
+
+.footer-title {
+  color: #135155;
+  font-weight: bold;
+}
+
+.footer-grid {
+  gap: 26px;
+  font-size: 16px;
+}
+
+.footer a,
+.footer p {
+  text-decoration: none;
+  color: #4a606b;
+}
+
+.footer a:hover {
+  color: #3b4d57;
+  text-decoration: underline;
+}
+
+/* Custom table styling */
+.table {
+  width: 100%; /* Full width of the container */
+  font-size: 18px; /* Larger font size */
+  border-spacing: 0 10px; /* Memberikan jarak vertikal antara thead dan tbody */
+  border-collapse: separate; /* Agar border-spacing bisa bekerja */
+}
+
+.table th,
+.table td {
+  padding: 16px;
+}
+
+th {
+  background-color: #FFC51E;
+  padding: 8px;
+}
+
+.center-table {
+  text-align: center; 
+}
+
+.center-table, .header-table, thead {
+  background-color: #FFC51E; /* Warna hijau muda */
+  color: black; /* Sesuaikan warna teks jika diperlukan */
+  padding: 8px; 
+} 
+
+.table tbody th {
+  background-color: #F8FBF8;
+}
+
+.table tbody td {
+  background-color: #FFFAF8; 
+}
+
+.table tbody td {
+  background-color: #FFFAF8; 
+}
+
+.number {
+  text-align: center;
+  background-color:  #135155;
+}
+
+/* Adjust height of table rows */
+.table tbody tr {
+  height: 60px; /* Increase row height */
+}
+
+
+
+

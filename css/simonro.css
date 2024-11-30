@@ -1,0 +1,262 @@
+:root {
+  --color-gray-100: #f8f9fa;
+  --color-link: #0f7c83;
+  --padding-base: 16px;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* navbar css */
+body {
+  padding-top: 8rem;
+  background-color: #f8f8f8;
+}
+nav,
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
+  backdrop-filter: blur(56px);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-inter);
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 24px 80px;
+  width: 100%;
+}
+.navbar-brand {
+  padding-left: 2rem;
+}
+.navbar-nav {
+  flex-grow: 1;
+  justify-content: center;
+}
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #4a606b;
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+.btn-primary {
+  margin-right: 2rem;
+}
+.btn-custom {
+  margin-right: 1rem;
+  background-color: #135155;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  min-width: 53px;
+}
+.btn-custom-subcription {
+  background-color: #135155;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 12px, 16px, 12px, 16px;
+  font-weight: medium;
+  display: inline-block;
+  min-width: 53px;
+}
+.btn-custom-subcription:hover {
+  background-color: #0f4141;
+  color: white;
+}
+.btn-custom:hover {
+  background-color: #0f4141;
+  color: white;
+}
+
+.navbar-nav,
+.nav-item {
+  font-weight: bold;
+  color: #4a606b;
+}
+.dropdown-menu {
+  padding: 8px;
+  gap: 10px;
+}
+.dropdown-menu,
+.dropdown-item {
+  color: #4a606b;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: normal;
+}
+/* navbar css end */
+
+/* simonro */
+.simonro-feature {
+  font-family: var(--font-poppins);
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.product-title {
+  font-family: var(--font-poppins);
+  font-weight: 800;
+  color: #ffc51e;
+  font-size: 40px;
+}
+.product-description {
+  font-family: var(--font-inter);
+  font-weight: normal;
+  font-size: 16x;
+  line-height: 32px;
+}
+.container {
+  margin-top: 50px;
+}
+
+.accordion-header,
+h2 {
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.accordion-bold {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: #4a606b;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.accordion-body {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: #4a606b;
+  line-height: 32px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.custom-shadow .accordion-item {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; /* Slightly rounds the corners for a softer look */
+  margin-bottom: 20px;
+  padding: 8px 16px;
+}
+
+.custom-shadow .accordion-button {
+  border-radius: 5px; /* Ensures button fits nicely with the shadowed card */
+}
+
+.custom-shadow .accordion-button:focus {
+  box-shadow: none; /* Removes the default Bootstrap focus shadow */
+}
+
+.accordion-button {
+  background-color: transparent;
+  font-family: var(--font-inter);
+  font-size: 18px;
+  color: #2e2e2e;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: inherit;
+}
+
+.accordion-button:hover {
+  background-color: transparent;
+}
+/* simonro end */
+
+/* footer */
+footer {
+  font-family: var(--font-inter);
+  padding: 16px;
+}
+
+.footer-icon {
+  color: #ffd43b;
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.footer-title {
+  color: #135155;
+  font-weight: bold;
+}
+
+.footer-grid {
+  gap: 26px;
+  font-size: 16px;
+}
+
+.footer a,
+.footer p {
+  text-decoration: none;
+  color: #4a606b;
+}
+
+/* Optional: Add some hover effects */
+.footer a:hover {
+  color: #3b4d57;
+  text-decoration: underline;
+}
+
+@media (max-width: 963px) {
+  .product-title {
+    font-family: var(--font-poppins);
+    font-weight: 800;
+    color: #ffc51e;
+    font-size: 36px;
+  }
+  .accordion-button {
+    background-color: transparent;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    color: #2e2e2e;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: inherit;
+  }
+}
+
+@media (max-width: 763px) {
+  .product-title {
+    font-family: var(--font-poppins);
+    font-weight: 800;
+    color: #ffc51e;
+    font-size: 26px;
+  }
+  .accordion-button {
+    background-color: transparent;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    color: #2e2e2e;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: inherit;
+  }
+}

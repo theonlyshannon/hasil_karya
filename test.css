@@ -1,0 +1,646 @@
+:root {
+  --color-gray-100: #f8f9fa;
+  --color-link: #0f7c83;
+  --padding-base: 16px;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+.container-withus {
+  margin-top: 2rem;
+}
+.container-product {
+  margin-top: 3rem;
+}
+.container-testimoni {
+  margin-top: 2rem;
+}
+.container-rating {
+  margin-top: 2rem;
+}
+.container-service {
+  margin-top: 2rem;
+}
+.container-footer {
+  margin-top: 5rem;
+}
+.container-article {
+  margin-top: 5rem;
+}
+.container-about {
+  margin-top: 10rem;
+}
+/* navbar css */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 8rem;
+  margin-top: 0;
+}
+nav,
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  padding: 24px 80px;
+  width: 100%;
+}
+.navbar-brand {
+  padding-left: 2rem;
+}
+.navbar-nav {
+  flex-grow: 1;
+  justify-content: center;
+}
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+.btn-primary {
+  margin-right: 2rem;
+}
+.btn-custom {
+  margin-right: 1rem;
+  background-color: #135155;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  min-width: 53px;
+}
+.btn-custom:hover {
+  background-color: #0f4141;
+  color: white;
+}
+
+.navbar-nav,
+.nav-item {
+  font-weight: bold;
+  color: #135155;
+}
+.dropdown-menu {
+  padding: 8px;
+  gap: 10px;
+}
+.dropdown-menu,
+.dropdown-item {
+  color: #4a606b;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: normal;
+}
+/* navbar css end */
+
+/*  */
+.feature-label {
+  border-radius: 50px;
+  background-color: #fabb050a;
+  padding: 16px;
+  color: #ffc51e;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+}
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 588px; /* Atur ukuran sesuai kebutuhan */
+  margin-top: 6rem;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-label {
+  font-family: var(--font-poppins);
+  font-size: 72px;
+  font-weight: bold;
+}
+.hero-card {
+  background-color: #f8f8f8;
+  padding: 8px;
+  width: 751px;
+  height: 149px;
+}
+.hero-link {
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  color: #0f7c83;
+  font-weight: bold;
+}
+.hero-title {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 24px;
+  color: #171717;
+}
+.hero-description {
+  font-family: var(--font-poppins);
+  font-weight: small;
+  font-size: 14px;
+  color: #4a606b;
+}
+
+/* Glassmorphism background */
+.product-service-card {
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 439px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparan background */
+}
+
+/* Text styling */
+.product-service-title {
+  font-family: var(--font-poppins);
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* Initial style for image */
+.zoom-image {
+  transition: transform 0.5s ease;
+  transform-origin: center; /* Ensures zoom happens from the center */
+}
+
+/* Hover effect to zoom in */
+.card:hover .zoom-image {
+  transform: scale(1.1); /* Zooms the image by 10% */
+}
+
+/* Hover effect to enlarge glassmorph and text */
+.card:hover .product-service-card {
+  transform: scale(1.1) translate(-50%, -50%); /* Enlarges glass and keeps it centered */
+  height: 90px; /* Optionally increase the height */
+}
+
+.card:hover .product-service-title {
+  transform: scale(1.1); /* Enlarges the text */
+}
+/*  */
+
+/* company product start */
+.company {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 40px;
+}
+.company-product {
+  color: #135155;
+  font-family: var(--font-poppins);
+  font-size: 16px;
+}
+/* company product end */
+
+/* article css start */
+.article {
+  font-family: var(--font-inter);
+  font-weight: bold;
+}
+
+.article-card {
+  padding: var(--padding-base);
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.article-card:hover {
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.article-title {
+  font-family: var(--font-inter);
+  font-weight: 800; /* Applies bold to all but can be overridden */
+  font-size: 24px;
+  color: #135155;
+}
+.article-description {
+  font-family: var(--font-inter);
+  color: #4a606b;
+  font-size: 16px;
+}
+
+.article-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-link {
+  font-family: var(--font-inter);
+  font-weight: bold; /* Applies bold to all but can be overridden */
+  color: #135155;
+}
+
+.article-link {
+  color: #0f7c83;
+  font-family: var(--font-poppins);
+  font-weight: medium;
+}
+
+.article-link:hover {
+  color: #0d5156;
+}
+
+.title-content {
+  font-size: 24px;
+}
+
+.title-description {
+  font-size: 15px;
+  font-weight: 400; /* Specific to description */
+}
+
+.title-link {
+  font-family: var(--font-poppins);
+  font-size: 15px;
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none; /* Assuming you might not want underlines */
+}
+/* article css end  */
+
+/* about company css start */
+.btn-custom-about {
+  margin-right: 1rem;
+  background-color: #135155;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  min-width: 53px;
+}
+/* about company css end */
+
+/*product */
+.product-card {
+  padding: var(--padding-base);
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  width: 408px;
+  height: auto;
+  border-radius: 16px;
+}
+.product-card:hover {
+  padding: var(--padding-base);
+  background-color: #e7e7ff;
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  width: 408px;
+  height: auto;
+  border-radius: 16px;
+}
+.product {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+}
+.card-body {
+  background-color: #f8f8f8;
+}
+.card-img-top-custom {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.rounded-bottom-custom {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.product-title {
+  font-family: var(--font-poppins);
+  font-weight: bold;
+  font-size: 32px;
+  color: #0f7c83;
+}
+.product-description {
+  font-family: var(--font-poppins);
+  font-weight: bold;
+  font-size: 20px;
+  color: #4a606b;
+}
+/* product  */
+
+/* join with us */
+.withus {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 42px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.withus-description {
+  color: #4a606b;
+  font-family: var(--font-poppins);
+}
+#emailInput {
+  width: 895px;
+  height: 65px;
+  font-size: 18px;
+  padding: 10px;
+}
+.btn-withus {
+  background-color: #135155;
+  color: white;
+  border: none;
+  height: 65px;
+  width: auto; /* Lebar menyesuaikan konten */
+  padding: 0 20px; /* Padding kiri kanan */
+}
+.form-inline-block {
+  display: flex;
+  align-items: center;
+}
+.form-inline-block .form-control {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-inline-block .btn {
+  display: inline-block;
+}
+/* join with us end */
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.withus-line {
+  margin-bottom: 20px; /* Jarak antara gambar dan h1 */
+}
+
+/* testimonial */
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.btn-circle.btn-xl {
+  width: 55px;
+  height: 55px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+
+
+
+.hover-shadow {
+  transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden; /* Ensures that the image doesn't overflow the rounded corners */
+}
+
+.hover-shadow:hover {
+  box-shadow: 10px 36px 52px -5px rgba(0, 0, 0, 0.42);
+  border-radius: 20px; /* Slightly increase the rounding on hover */
+}
+
+/* product */
+.card {
+  padding: 16px;
+}
+.card-text {
+  color: #4a606b;
+  font-family: var(--font-inter);
+  font-size: 18px;
+}
+.card-user {
+  color: #135155;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: bold;
+}
+.card-job {
+  color: #4a606b;
+  font-family: var(--font-inter);
+  font-size: 16px;
+}
+/* product end */
+
+/* footer */
+footer {
+  background-color: #fff;
+  font-family: var(--font-inter);
+  padding: 16px;
+}
+
+.footer-icon {
+  color: #ffd43b;
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.footer-title {
+  color: #135155;
+  font-weight: bold;
+}
+
+.footer-grid {
+  font-size: 16px;
+}
+
+.footer a,
+.footer p {
+  text-decoration: none;
+  color: #4a606b;
+}
+
+/* Optional: Add some hover effects */
+.footer a:hover {
+  color: #3b4d57;
+  text-decoration: underline;
+}
+
+/* Responsive card grid */
+@media (max-width: 768px) {
+  /* hero responsive css start */
+  .hero-image {
+    position: static;
+    width: 365px;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .hero-label {
+    font-family: var(--font-poppins);
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .hero-card {
+    background-color: #f8f8f8;
+    padding: 8px;
+    width: 374px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    color: #171717;
+  }
+
+  .hero-card-img {
+    width: 100%; /* Mengubah lebar agar responsif */
+    height: auto;
+  }
+
+  .hero-description {
+    font-family: var(--font-poppins);
+    font-weight: small;
+    font-size: 16px;
+    color: #4a606b;
+  }
+  .product-service-card {
+    font-size: 1.2rem;
+    height: 60px;
+  }
+  /* hero responsive css end */
+
+  /* about company responsive css start */
+  .container-about {
+    margin-top: 1.5rem;
+  }
+  .company-description,
+  .icon-feature-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .icon-feature-col p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Memberikan jarak antar ikon */
+  }
+  .company {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .company-description {
+    margin-bottom: 1.5rem; /* Menambah jarak di bawah teks deskripsi */
+  }
+  .company-product {
+    text-align: center;
+    font-size: 18px;
+  }
+  .btn-custom-about {
+    margin-top: 1rem;
+  }
+  /* about company responsive css end */
+
+  button
+
+  /* product responsive css start */
+  .container-product {
+    margin-top: 3rem;
+  }
+  .product-card {
+    padding: var(--padding-base);
+    box-shadow: 0 24px 72px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    width: 365px;
+    height: auto;
+    border-radius: 16px;
+    margin: auto;
+  }
+  .product-card:hover {
+    padding: var(--padding-base);
+    background-color: #e7e7ff;
+    box-shadow: 0 24px 72px rgba(0, 0, 0, 0.08);
+    width: 365px;
+    height: auto;
+    border-radius: 16px;
+    margin: auto;
+  }
+  /* product responsive css end */
+
+  /* bussiness responsive start */
+  .product-service-card {
+    width: 75%;
+  }
+  .product-service-title {
+    font-size: 18px;
+  }
+  .card:hover .product-service-card {
+    transform: scale(1) translate(-50%, -40%); /* Enlarges glass and keeps it centered */
+  }
+
+  .card:hover .product-service-title {
+    transform: scale(1); /* Enlarges the text */
+  }
+  /* bussiness responsive end */
+
+  /* with us responsive start */
+  .withus {
+    font-size: 32px;
+  }
+  .withus-description {
+    color: #4a606b;   
+    font-size: 12px;
+  }
+  #emailInput {
+    width: 323px; /* Lebar input diatur menjadi 916px */
+    height: 44px; /* Sesuaikan tinggi jika diperlukan */
+    font-size: 16px; /* Sesuaikan ukuran font jika diperlukan */
+    padding: 8px; /* Sesuaikan padding */
+  }
+  .btn-withus {
+    background-color: #135155;
+    font-size: 16px;
+    color: white;
+    height: 44px;
+    width: 323px; /* Lebar menyesuaikan konten */
+    padding: 8px; /* Padding kiri kanan */
+  }
+  /* with us responsive end */
+}

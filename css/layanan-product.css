@@ -1,0 +1,288 @@
+:root {
+  --color-gray-100: #f8f9fa;
+  --color-link: #0f7c83;
+  --padding-base: 16px;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* navbar css */
+body {
+  padding-top: 8rem;
+}
+nav,
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
+  backdrop-filter: blur(56px);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  padding: 24px 80px;
+  width: 100%;
+}
+.navbar-brand {
+  padding-left: 2rem;
+}
+.navbar-nav {
+  flex-grow: 1;
+  justify-content: center;
+}
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+.btn-primary {
+  margin-right: 2rem;
+}
+.btn-custom {
+  margin-right: 1rem;
+  background-color: #135155;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  min-width: 53px;
+}
+.btn-custom:hover {
+  background-color: #0f4141;
+  color: white;
+}
+
+.navbar-nav,
+.nav-item {
+  font-weight: bold;
+  color: #135155;
+}
+.dropdown-menu {
+  padding: 8px;
+  gap: 10px;
+}
+.dropdown-menu,
+.dropdown-item {
+  color: #4a606b;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: normal;
+}
+/* navbar css end */
+
+/* subscribtion product */
+.header-subscribe {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+.header-subscribe-title {
+  font-family: var(--font-poppins);
+  font-weight: 800;
+  font-size: 40px;
+}
+.header-subscribe-description {
+  font-family: var(--font-poppins);
+  font-weight: normal;
+  font-size: 22px;
+  color: #4A606B;
+}
+.container-product { 
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+.feature-label {
+  border-radius: 50px;
+  background-color: #FFC51E;
+  padding: 8px;
+  color: #135155;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.label {
+  font-family: var(--font-inter); 
+  font-weight: 600; 
+  color: #171717;
+  margin: 0; 
+}
+.feature-title {
+  font-family: var(--font-poppins);
+  font-weight: 600; 
+  color
+}
+
+.feature {
+  display: flex;
+  align-items: center; /* Untuk menyejajarkan elemen secara vertikal di tengah */
+}
+.feature h3 {
+  margin-right: 20px; /* Menambahkan jarak antara h3 dan elemen-elemen lainnya */
+}
+.feature-label {
+  margin-right: 10px; /* Menambahkan jarak antar label */
+}
+.product-detail-link {
+  color: #0f7c83;
+  font-family: var(--font-poppins);
+  font-weight: medium;
+}
+
+.product-detail-link:hover {
+  color: #0d5156;
+}
+
+.subscribe-category-label {
+  border-radius: 50px;
+  background-color: var(--color-gray-100);
+  padding: 8px;
+  color: #135155;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.category-label {
+  font-family: var(--font-inter); 
+  font-weight: 600; 
+  color: #171717;
+  margin: 0; 
+}
+.subscribe-card {
+  padding: var(--padding-base);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 18px;
+}
+.subscribe-category {
+  font-family: var(--font-inter);
+  font-weight: bold; 
+  font-size: 20px;
+  color: #135155;
+}
+.feature-card {
+  font-family: var(--font-inter);
+  font-weight: 600; 
+  font-size: 16px;
+  color: #4A606B;
+}
+.subscribe-price {
+  font-family: var(--font-inter);
+  font-weight: 800; /* Applies bold to all but can be overridden */
+  font-size: 24px;
+  color: #FFC51E;
+}
+.subscribe-description {
+  font-family: var(--font-inter);
+  color: #4A606B;
+  font-size: 16px;
+  line-height: 32px;
+}
+.article-link {
+  color: #0F7C83;
+  font-family: var(--font-poppins);
+  font-weight: medium;
+}
+.title-content {
+  font-size: 24px;
+}
+.title-description {
+  font-size: 15px;
+  font-weight: 400; /* Specific to description */
+}
+.card-recomended {
+  position: relative;
+  top: -20px; /* Sesuaikan nilai ini untuk mengatur seberapa tinggi card menjorok ke atas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan agar lebih menonjol */
+  z-index: 1;
+}
+.benefit {
+  font-family: var(--font-inter);
+  color: #135155;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn-subscribe {
+  display: block; 
+  font-family: var(--font-poppins);
+  width: 100%;    
+  padding: 10px;  
+  text-align: center; 
+  background-color: #fff; /* Warna latar belakang putih */
+  color: #135155; 
+  border: 3px solid #135155; /* Border dengan warna yang sama seperti background-color sebelumnya */
+  border-radius: 4px; 
+  cursor: pointer;  
+}
+.btn-recomended {
+  display: block; 
+  font-family: var(--font-poppins);
+  width: 100%;    
+  padding: 10px;  
+  text-align: center; 
+  background-color: #135155; 
+  border: 3px solid #135155; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+.btn-recomended:hover {
+  background-color: #fff; 
+  border: 3px #135155; 
+}
+.btn-subscribe:hover {
+  display: block; 
+  font-family: var(--font-poppins);   
+  padding: 10px;  
+  text-align: center; 
+  background-color: #135155; 
+  color: #FFF; 
+}
+/*  */
+
+/* footer */
+footer {
+  font-family: var(--font-inter);
+  padding: 16px;
+}
+
+.footer-icon {
+  color: #FFD43B; 
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: #F8F8F8;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.footer-title {
+  color: #135155;
+  font-weight: bold;
+}
+
+.footer-grid {
+  gap: 26px;
+  font-size: 16px;
+}
+
+.footer a,
+.footer p {
+  text-decoration: none;
+  color: #4A606B;
+}
+
+/* Optional: Add some hover effects */
+.footer a:hover {
+  color: #3b4d57;
+  text-decoration: underline;
+}
+

@@ -1,0 +1,162 @@
+:root {
+  --color-gray-100: #f8f9fa;
+  --color-link: #0F7C83;
+  --padding-base: 16px;
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+  /* navbar css */
+  body {
+    padding-top: 8rem; 
+  } 
+nav, .navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
+  backdrop-filter: blur(56px);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  padding: 24px 80px;
+  width: 100%;
+}
+
+.navbar-nav {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+.btn-primary {
+  margin-right: 2rem;
+}
+.btn-custom {
+  margin-right: 1rem;
+  background-color: #135155;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: normal;
+  display: inline-block;
+  min-width: 53px;
+}
+.btn-custom:hover {
+  background-color: #0f4141;
+  color: white;
+}
+
+.navbar-nav, .nav-item {
+  font-weight: bold;
+  color: #135155;
+}
+.dropdown-menu {
+  padding: 8px;
+  gap: 10px;
+}
+.dropdown-menu, .dropdown-item {
+  color: #4A606B;
+  font-family:  var(--font-inter);
+  font-size: 16px;
+  font-weight: normal;
+}
+/* navbar css end */
+
+/* article css start */
+.service-card {
+  padding: 40px;
+  max-width: 100%;
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.12);
+}
+.content-title {
+  color: #135155;
+  font-family:  var(--font-poppins);
+  font-size: 22px;
+  font-weight: bold;
+}
+.service-description {
+  color: #4A606B;
+  font-family:  var(--font-inter);
+  font-size: 14px;
+  font-weight: normal;
+}
+.service-title {
+  color: #4A606B;
+  font-family:  var(--font-poppins);
+  font-size: 40px;
+  font-weight: bold;
+}
+.service {
+  color: #0F7C83;
+  margin-right: px;
+  font-family:  var(--font-poppins);
+  font-size: 16px;
+  text-align: center; /* Agar teks "layanan" berada di tengah secara horizontal */
+  font-weight: bold;
+}
+/*  */
+
+/* footer */
+footer {
+  background-color: #fff;
+  font-family: var(--font-inter);
+  padding: 16px;
+}
+
+.footer-icon {
+  color: #FFD43B; 
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: #F8F8F8;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.footer-title {
+  color: #135155;
+  font-weight: bold;
+}
+
+.footer-grid {
+  gap: 26px;
+  font-size: 16px;
+}
+
+.footer a,
+.footer p {
+  text-decoration: none;
+  color: #4a606b;
+}
+
+.footer a:hover {
+  color: #3b4d57;
+  text-decoration: underline;
+}
+
+@media (max-width: 763px) {
+  .service-card {
+    padding: 30px;
+    max-width: 100%;
+  }
+  .product-title {
+    font-size: 32px;
+  }
+  .service {
+    color: #0F7C83;
+    margin-right: px;
+    font-family:  var(--font-poppins);
+    font-size: 20px;
+    text-align: center; 
+    font-weight: bold;
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <link rel="shortcut icon" href="/public/logo-hasil-karya.png" type="image/x-icon">
+    
+    <!-- data tables cdn -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="../css/perizinan-bangunan.css" />
+
+    <script defer src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+    <script defer src="https://cdn.datatables.net/2.1.7/js/dataTables.bootstrap5.js"></script>
+
+    <script defer src="../js/tables.js"></script>
+
+    <title>Perizinan Bangunan</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="/public/logo.png" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subscriptionproduct.html">Langganan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artikel.html">Artikel</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Layanan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="perizinan-bangunan.html">Perizinan Bangunan</a>
+                        <a class="dropdown-item" href="konstruksi-bangunan.html">Konstruksi Bangunan</a>
+                        <a class="dropdown-item" href="management-project.html">Manajemen Proyek</a>
+                        <a class="dropdown-item" href="design-arsitektur.html">Desain Arsitektur</a>
+                        <a class="dropdown-item" href="pemeliharaan-bangunan.html">Pemeliharaan Bangunan</a>
+                        <a class="dropdown-item" href="perencenaan-lingkungan.html">Perencanaan Lingkungan</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn btn-custom" type="button">Masuk</button>
+        </div>
+    </nav>
+
+    <!-- tabel perizinan -->
+    <div class="container">
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+                    <td>2011-04-25</td>
+                    <td>$320,800</td>
+                </tr>
+                <tr>
+                    <td>Garrett Winters</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>63</td>
+                    <td>2011-07-25</td>
+                    <td>$170,750</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- tabel perizinan end -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark">
+        <section class="footer">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-5">
+                    <!-- Grid column Cv Hasil Karya -->
+                    <div class="col-md-4 col-lg-8 col-xl-6 col-sm-12 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold footer-title mb-3">Cv Hasil Karya</h6>
+                        <p class="footer-description">
+                            CV HASIL KARYA merupakan perusahaan yang bergerak di bidang jasa
+                            konstruksi dan pengembang teknologi.
+                            Dengan sumber daya manusia yang berpengalaman dan profesional.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot footer-icon"></i>
+                            Jln. Jendral Soedirman No.34 Purwokerto, Jawa Tengah, Indonesia
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone footer-icon"></i>
+                            081 391 217 111
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column Platform -->
+                    <div class="col-md-6 col-lg-2 col-xl-2 col-sm-4 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 footer-title">Platform</h6>
+                        <div class="footer-grid">
+                            <p>
+                                <a href="#" class="text-dark">Produk</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Layanan Kami</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Galeri Projek</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Artikel</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column Company -->
+                    <div class="col-md-6 col-lg-2 col-xl-2 col-sm-4 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 footer-title">Company</h6>
+                        <div class="footer-grid">
+                            <p>
+                                <a href="#!" class="text-dark">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Contact Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Testimoni</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+    </footer>
+    <!-- Copyright -->
+    <div class="text-center p-3">
+        © 2024 Hasil Karya. All Right Reserved
+    </div>
+    <!-- Footer -->
+
+    <!-- Javascript end -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
