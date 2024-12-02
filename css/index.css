@@ -115,10 +115,11 @@ nav,
   text-align: center;
   white-space: nowrap;
 }
-.hero-image {
+.hero-image { 
   position: absolute;
   right: 0;
   top: 0;
+  left: ;
   width: 588px; /* Atur ukuran sesuai kebutuhan */
   margin-top: 6rem;
   height: 100%;

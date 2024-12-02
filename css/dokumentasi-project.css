@@ -1,0 +1,202 @@
+:root {
+    --color-gray-100: #f8f9fa;
+    --color-link: #0F7C83;
+    --padding-base: 16px;
+    --font-inter: 'Inter', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+  }
+  
+    /* navbar css */
+    body {
+      overflow-x: hidden;
+      } 
+  nav, .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
+    backdrop-filter: blur(56px);
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    padding: 24px 80px;
+    width: 100%;
+  }
+  .navbar-brand {
+    padding-left: 2rem;
+  }
+  .navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .nav-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  .btn-primary {
+    margin-right: 2rem;
+  }
+  .btn-custom {
+    margin-right: 1rem;
+    background-color: #135155;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    min-width: 53px;
+  }
+  .btn-custom:hover {
+    background-color: #0f4141;
+    color: white;
+  }
+  
+  .navbar-nav, .nav-item {
+    font-weight: bold;
+    color: #135155;
+  }
+  .dropdown-menu {
+    padding: 8px;
+    gap: 10px;
+  }
+  .dropdown-menu, .dropdown-item {
+    color: #4A606B;
+    font-family:  var(--font-inter);
+    font-size: 16px;
+    font-weight: normal;
+  }
+  /* navbar css end */
+
+  /*  */
+  div {
+    position: relative; /* Parent harus relative untuk positioning anak */
+    text-align: center; /* Agar teks berada di tengah horizontal */
+  }
+  
+  .hero-image {
+    width: 100%; /* Gambar akan memenuhi lebar container */
+    height: auto; /* Jaga aspek rasio gambar */
+    display: block; /* Hapus spasi bawaan inline elemen */
+  }
+  
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 56px;
+    font-weight: bold;
+    font-family: poppins;
+    z-index: 2;
+  }
+  h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: poppins;
+  }
+  p {
+    color: black;
+    font-size: 16px;
+    font-family: poppins;
+  }
+  .img-ews {
+    height: 400px; 
+    width: 1146px;
+  }
+  /*  */
+
+  /* footer */
+footer {
+    font-family: var(--font-inter);
+    padding: 16px;
+  }
+  
+  .footer-icon {
+    color: #FFD43B; 
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: #F8F8F8;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .footer-title {
+    color: #135155;
+    font-weight: bold;
+  }
+  
+  .footer-grid {
+    gap: 26px;
+    font-size: 16px;
+  }
+  
+  .footer a,
+  .footer p {
+    text-decoration: none;
+    color: #4A606B;
+  }
+  
+  /* Optional: Add some hover effects */
+  .footer a:hover {
+    color: #3b4d57;
+    text-decoration: underline;
+  }
+
+  .hero-image {
+    margin-bottom: -100px; /* Gambar di bawahnya akan tumpang tindih */
+}
+
+.overlapping-images {
+    margin-top: 0;
+    justify-content: center;
+}
+
+.project-image {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+}
+
+  @media (max-width: 763px) {
+    body {
+      padding-top: 5rem;
+      }
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: poppins;
+      z-index: 2;
+    }
+    h2 {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: poppins;
+      }
+      p {
+        color: black;
+        font-size: 12px;
+        font-family: poppins;
+      }
+      .img-ews {
+        height: auto;
+        weight: 1000px;
+      }
+  }

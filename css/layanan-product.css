@@ -113,7 +113,12 @@ nav,
 .feature-title {
   font-family: var(--font-poppins);
   font-weight: 600; 
-  color
+  color:;
+}
+.feature-description {
+  font-family: var(--font-poppins);
+  font-size: 16px; 
+  color: #4A606B;
 }
 
 .feature {
