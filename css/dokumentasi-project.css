@@ -168,6 +168,24 @@ footer {
     position: relative;
     top: -30px;
 }
+.custom-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Jarak antar elemen */
+  flex-wrap: wrap; /* Agar elemen turun ke bawah pada layar kecil */
+}
+
+.custom-col {
+  flex: 0 1 auto; /* Menyesuaikan ukuran kolom secara fleksibel */
+  text-align: center;
+}
+
+.responsive-img {
+  max-width: 100%; /* Membatasi lebar maksimum gambar agar tidak melampaui kontainer */
+  height: auto; /* Memastikan rasio gambar tetap */
+}
+
 
   @media (max-width: 763px) {
     body {
@@ -199,4 +217,13 @@ footer {
         height: auto;
         weight: 1000px;
       }
+      .hero-image {
+        margin-bottom: -10px; /* Gambar di bawahnya akan tumpang tindih */
+    }
+    .custom-row {
+        flex-direction: column; /* Menumpuk gambar secara vertikal */
+    }
+    .custom-col {
+        margin-bottom: 15px; /* Menambahkan jarak antar gambar */
+    }
   }
