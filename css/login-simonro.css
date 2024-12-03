@@ -108,7 +108,56 @@ input[type="email"], input[type="password"] {
     margin: 0; 
 }
 @media (max-width: 768px) {
+    body {
+        background-color: #0F7C83; /* Warna background untuk mobile */
+    }
     .login-card {
         max-width: 90; /* Responsive width for smaller screens */
     }
+    .card-title {
+        font-family: poppins;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+    .login-card {
+        margin: 20px;
+        width: 90%;
+        max-width: 360px;
+    }
+    .login-card {
+        max-width: 360px;
+        padding: 15px;
+    }
+    input[type="email"], input[type="password"] {
+        height: 45px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .input-group .form-control placeholder {
+        flex: 1 1 auto;
+        height: 45px;
+    }
+    .form-check-label{ 
+        font-family: poppins;
+        font-size: 16px;
+        font-weight: medium;
+        color: #4A606B;
+    }
+    .forgot-password-label {
+        color: #0F7C83;
+        font-family: poppins;
+        font-style: italic;
+        font-size: 12px;
+        font-weight: medium;
+    }
+    .forgot-password-label:hover {
+        color: #4A606B;
+    }
+    .form-check-label{
+        font-size: 12px;
+    }
+    .input-group .btn {
+        height: 50px;
+    }   
 }

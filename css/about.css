@@ -137,7 +137,7 @@ nav, .navbar {
   background-position: right center; /* Mengatur posisi gambar ke kanan */
   background-size: contain; /* Agar gambar menyesuaikan ukurannya dengan card */
   height: 251px;
-  width: 342px;
+  width: 650px;
   z-index: 1; /* Menempatkan teks di atas gambar */
   transition: all 0.4s ease;
 }
