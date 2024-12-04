@@ -2,28 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="../css/perizinan-bangunan.css">
     <link rel="shortcut icon" href="/public/logo-hasil-karya.png" type="image/x-icon">
-    
-    <!-- data tables cdn -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.bootstrap5.css">
-    <link rel="stylesheet" href="../css/perizinan-bangunan.css" />
-
-    <script defer src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
-    <script defer src="https://cdn.datatables.net/2.1.7/js/dataTables.bootstrap5.js"></script>
-
-    <script defer src="../js/tables.js"></script>
-
     <title>Perizinan Bangunan</title>
 </head>
 
@@ -68,41 +61,296 @@
             <button class="btn btn-custom" type="button">Masuk</button>
         </div>
     </nav>
-
-    <!-- tabel perizinan -->
+    <h1 style="text-align: center;">Data Perizinan Bangunan</h1>
     <div class="container">
         <table id="example" class="table table-striped" style="width:100%">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
+                    <th class="number">Nomor</th>
+                    <th>Keterangan Perizinan</th>
+                    <th class="code">KODE</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011-04-25</td>
-                    <td>$320,800</td>
+                    <td class="number">1</td>
+                    <td>Konstruksi Gedung Hunian</td>
+                    <td class="code">41011</td>
                 </tr>
                 <tr>
-                    <td>Garrett Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011-07-25</td>
-                    <td>$170,750</td>
+                    <td class="number">2</td>
+                    <td>Konstruksi Gedung Perkantoran</td>
+                    <td class="code">41012</td>
                 </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td>Konstruksi Gedung Industri</td>
+                    <td class="code">41013</td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td>Konstruksi Gedung Perbelanjaan</td>
+                    <td class="code">41014</td>
+                </tr>
+                <tr>
+                    <td class="number">5</td>
+                    <td>Konstruksi Gedung Kesehatan</td>
+                    <td class="code">41015</td>
+                </tr>
+                <tr>
+                    <td class="number">6</td>
+                    <td>Konstruksi Gedung Pendidikan</td>
+                    <td class="code">41016</td>
+                </tr>
+                <tr>
+                    <td class="number">7</td>
+                    <td>Konstruksi Gedung Tempat Hiburan dan Olahraga</td>
+                    <td class="code">41018</td>
+                </tr>
+                <tr>
+                    <td class="number">8</td>
+                    <td>Konstruksi Gedung Lainnya</td>
+                    <td class="code">41019</td>
+                </tr>
+                <tr>
+                    <td class="number">9</td>
+                    <td>Konstruksi Bangunan Sipil Jalan</td>
+                    <td class="code">42101</td>
+                </tr>
+                <tr>
+                    <td class="number">10</td>
+                    <td>Konstruksi Bangunan Sipil Jembatan, Jalan Layang, Fly Over, dan Underpass</td>
+                    <td class="code">42102</td>
+                </tr>
+                <tr>
+                    <td class="number">11</td>
+                    <td>Konstruksi Jalan Rel</td>
+                    <td class="code">42103</td>
+                </tr>
+                <tr>
+                    <td class="number">12</td>
+                    <td>Konstruksi Terowongan</td>
+                    <td class="code">42104</td>
+                </tr>
+                <tr>
+                    <td class="number">13</td>
+                    <td>Konstruksi Jaringan Irigasi dan Drainase</td>
+                    <td class="code">42201</td>
+                </tr>
+                <tr>
+                    <td class="number">14</td>
+                    <td>Konstruksi Bangunan Sipil Pengolahan Air</td>
+                    <td class="code">42202</td>
+                </tr>
+                <tr>
+                    <td class="number">15</td>
+                    <td>Konstruksi Bangunan Sipil Prasarana dan Sarana Sistem Pengolahan Limbah Padat, Cair, dan Gas</td>
+                    <td class="code">42203</td>
+                </tr>
+                <tr>
+                    <td class="number">16</td>
+                    <td>Kontruksi Bangunan Sipil Elektrikal</td>
+                    <td class="code">42204</td>
+                </tr>
+                <tr>
+                    <td class="number">17</td>
+                    <td>Pembuatan/Pengobatan Sumur Air Tanah</td>
+                    <td class="code">42207</td>
+                </tr>
+                <tr>
+                    <td class="number">18</td>
+                    <td>Konstruksi Jaringan Irigasi, Komunikasi, dan Limbah Lainnya</td>
+                    <td class="code">42209</td>
+                </tr>
+                <tr>
+                    <td class="number">19</td>
+                    <td>Konstruksi Bangunan Prasarana Sumber Daya Air</td>
+                    <td class="code">42911</td>
+                </tr>
+                <tr>
+                    <td class="number">20</td>
+                    <td>Konstruksi Bangunan Pelabuhan Bukan Perikanan</td>
+                    <td class="code">42912</td>
+                </tr>
+                <tr>
+                    <td class="number">21</td>
+                    <td>Pengerukan</td>
+                    <td class="code">42914</td>
+                </tr>
+                <tr>
+                    <td class="number">22</td>
+                    <td>Konstruksi Bangunan Sipil Pertambangan</td>
+                    <td class="code">42916</td>
+                </tr>
+                <tr>
+                    <td class="number">23</td>
+                    <td>Konstruksi Bangunan Sipil Panas Bumi</td>
+                    <td class="code">42917</td>
+                </tr>
+                <tr>
+                    <td class="number">24</td>
+                    <td>Konstruksi Bangunan Sipil Fasilitas dan Olahraga</td>
+                    <td class="code">42918</td>
+                </tr>
+                <tr>
+                    <td class="number">25</td>
+                    <td>Konstruksi Bangunan Sipil Lainnya Ytdl</td>
+                    <td class="code">42919</td>
+                </tr>
+                <tr>
+                    <td class="number">26</td>
+                    <td>Konstruksi Reservoir Pembangkit Listrik Tenaga Air</td>
+                    <td class="code">42921</td>
+                </tr>
+                <tr>
+                    <td class="number">27</td>
+                    <td>Jasa Pekerjaan Konstruksi Pelindung Pantai</td>
+                    <td class="code">42922</td>
+                </tr>
+                <tr>
+                    <td class="number">28</td>
+                    <td>Konstruksi Bangunan Sipil Fasilitas Pengolahan Produk Kimia, Petrokimia, Farmasi, dan Industri</td>
+                    <td class="code">42923</td>
+                </tr>
+                <tr>
+                    <td class="number">29</td>
+                    <td>Konstruksi Bangunan Sipil Fasilitas Militer dan Peluncuran Satelit</td>
+                    <td class="code">42924</td>
+                </tr>
+                <tr>
+                    <td class="number">30</td>
+                    <td>Konstruksi Khusus Bangunan Sipil Lainnya Ytdl</td>
+                    <td class="code">42929</td>
+                </tr>
+                <tr>
+                    <td class="number">31</td>
+                    <td>Penyiapan Lahan</td>
+                    <td class="code">43120</td>
+                </tr>
+                <tr>
+                    <td class="number">32</td>
+                    <td>Instalasi Listrik</td>
+                    <td class="code">43211</td>
+                </tr>
+                <tr>
+                    <td class="number">33</td>
+                    <td>Instalasi Telekomunikasi</td>
+                    <td class="code">43212</td>
+                </tr>
+                <tr>
+                    <td class="number">34</td>
+                    <td>Instalasi Elektronika</td>
+                    <td class="code">43213</td>
+                </tr>
+                <tr>
+                    <td class="number">35</td>
+                    <td>Instalasi Sinyal dan Telekomunikasi Kereta Api</td>
+                    <td class="code">43215</td>
+                </tr>
+                <tr>
+                    <td class="number">36</td>
+                    <td>Instalasi Sinyal dan Rambu-Rambu Jalan Raya</td>
+                    <td class="code">43216</td>
+                </tr>
+                <tr>
+                    <td class="number">37</td>
+                    <td>Instalasi Saluran Air (Plambing)</td>
+                    <td class="code">43221</td>
+                </tr>
+                <tr>
+                    <td class="number">38</td>
+                    <td>Konstruksi Jaringan Irigasi, Komunikasi, Instalasi Pemanas dan Geotermalasi, dan Limbah Lainnya</td>
+                    <td class="code">43222</td>
+                </tr>
+                <tr>
+                    <td class="number">39</td>
+                    <td>Instalasi Pendingin dan Ventilasi Udara</td>
+                    <td class="code">43224</td>
+                </tr>
+                <tr>
+                    <td class="number">40</td>
+                    <td>Pemasangan Pondasi dan Tiang Pancang</td>
+                    <td class="code">43901</td>
+                </tr>
+                <tr>
+                    <td class="number">41</td>
+                    <td>Pemasangan Perancah Steiger</td>
+                    <td class="code">43902</td>
+                </tr>
+                <tr>
+                    <td class="number">42</td>
+                    <td>Pemasangan Rangka dan Atap/Roof Covering</td>
+                    <td class="code">43903</td>
+                </tr>
+                <tr>
+                    <td class="number">43</td>
+                    <td>Pemasangan Kerangka Baja</td>
+                    <td class="code">43904</td>
+                </tr>
+                <tr>
+                    <td class="number">44</td>
+                    <td>Penyewaan Alat Konstruksi Dengan Operator</td>
+                    <td class="code">43905</td>
+                </tr>
+                <tr>
+                    <td class="number">45</td>
+                    <td>Konstruksi Khusus Lainnya Ytdl</td>
+                    <td class="code">43909</td>
+                </tr>
+                <tr>
+                    <td class="number">46</td>
+                    <td>Perdagangan Besar Binatang Hidup</td>
+                    <td class="code">46205</td>
+                </tr>
+                <tr>
+                    <td class="number">47</td>
+                    <td>Perdagangan Besar Hasil Pertanian dan Hewan</td>
+                    <td class="code">46209</td>
+                </tr>
+                <tr>
+                    <td class="number">48</td>
+                    <td>Perdagangan Besar Piranti Lunak</td>
+                    <td class="code">46512</td>
+                </tr>
+                <tr>
+                    <td class="number">49</td>
+                    <td>Perdagangan Besar Suku Cadang Elektronik</td>
+                    <td class="code">46521</td>
+                </tr>
+                <tr>
+                    <td class="number">50</td>
+                    <td>Perdagangan Besar Mesin, Peralatan dan Perlengkapan Lainnya</td>
+                    <td class="code">46599</td>
+                </tr>
+                <tr>
+                    <td class="number">51</td>
+                    <td>Perdagangan Besar Barang Logam untuk Bahan Konstruksi</td>
+                    <td class="code">46631</td>
+                </tr>
+                <tr>
+                    <td class="number">52</td>
+                    <td>Perdagangan Besar Semen, Kapur, Pasir dan Batu</td>
+                    <td class="code">46634</td>
+                </tr>
+                <tr>
+                    <td class="number">53</td>
+                    <td>Perdagangan Besar Bahan Konstruksi Lainnya</td>
+                    <td class="code">46639</td>
+                </tr>
+                <tr>
+                    <td class="number">54</td>
+                    <td>Perdagangan Besar Berbagai Macam Barang</td>
+                    <td class="code">46900</td>
+                </tr>
+                <tr>
+                    <td class="number">55</td>
+                    <td>Aktivitas Teknologi Informasi dan Jasa</td>
+                    <td class="code">62090</td>
+                </tr>
+
             </tbody>
         </table>
     </div>
-    <!-- tabel perizinan end -->
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-dark">
@@ -179,12 +427,15 @@
     </div>
     <!-- Footer -->
 
-    <!-- Javascript end -->
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/custom.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "paging": true,
+                "searching": true,
+                "info": true
+            });
+        });
+    </script>
 </body>
 
 </html>

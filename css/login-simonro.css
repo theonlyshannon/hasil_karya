@@ -114,6 +114,9 @@ input[type="email"], input[type="password"] {
     .login-card {
         max-width: 90; /* Responsive width for smaller screens */
     }
+    .card-image {
+        
+    }
     .card-title {
         font-family: poppins;
         font-size: 28px;

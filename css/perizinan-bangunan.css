@@ -91,11 +91,25 @@ nav,
   font-weight: normal;
 }
 
-/* Footer styling */
+/* footer */
 footer {
   background-color: #fff;
   font-family: var(--font-inter);
   padding: 16px;
+}
+
+.footer-icon {
+  color: #ffd43b;
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
 }
 
 .footer-title {
@@ -104,7 +118,6 @@ footer {
 }
 
 .footer-grid {
-  gap: 26px;
   font-size: 16px;
 }
 
@@ -114,61 +127,118 @@ footer {
   color: #4a606b;
 }
 
+/* Optional: Add some hover effects */
 .footer a:hover {
   color: #3b4d57;
   text-decoration: underline;
-}
-
-/* Custom table styling */
-.table {
-  width: 100%; /* Full width of the container */
-  font-size: 18px; /* Larger font size */
-  border-spacing: 0 10px; /* Memberikan jarak vertikal antara thead dan tbody */
-  border-collapse: separate; /* Agar border-spacing bisa bekerja */
-}
-
-.table th,
-.table td {
-  padding: 16px;
-}
-
-th {
-  background-color: #FFC51E;
-  padding: 8px;
-}
-
-.center-table {
-  text-align: center; 
-}
-
-.center-table, .header-table, thead {
-  background-color: #FFC51E; /* Warna hijau muda */
-  color: black; /* Sesuaikan warna teks jika diperlukan */
-  padding: 8px; 
 } 
 
-.table tbody th {
-  background-color: #F8FBF8;
+
+/* Gaya tabel utama */
+table.dataTable {
+  border-collapse: collapse; /* Hilangkan gap default antar cell */
+  width: 100%; /* Lebar penuh tabel */
+  background-color: white; /* Latar belakang tabel */
+  border-spacing: 0;
 }
 
-.table tbody td {
-  background-color: #FFFAF8; 
+/* Header tabel */
+table.dataTable thead th {
+  background-color: #FFC51E; /* Warna header */
+  color: #000; /* Warna teks header */
+  text-align: left; /* Teks rata kiri */
+  font-size: 16px; /* Ukuran font */
+  padding: 16px; /* Spasi dalam */
+  border-bottom: 2px solid #fff; /* Border bawah */
 }
 
-.table tbody td {
-  background-color: #FFFAF8; 
+/* Baris di dalam tabel */
+table.dataTable tbody tr {
+  background-color: white; /* Latar belakang baris */
+  margin-bottom: 10rem; /* Jarak antar baris */
+  display: table-row; /* Tetap dalam format tabel */
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow ringan untuk tiap baris */
+  border-radius: 8px; /* Sudut melengkung */
 }
 
-.number {
-  text-align: center;
-  background-color:  #135155;
+/* Hover efek untuk baris */
+table.dataTable tbody tr:hover {
+  background-color: #f1f1f1; /* Warna saat hover */
 }
 
-/* Adjust height of table rows */
-.table tbody tr {
-  height: 60px; /* Increase row height */
+/* Sel tabel */
+table.dataTable tbody td {
+  padding: 16px; /* Spasi dalam */
+  font-size: 16px; /* Ukuran font */
+  vertical-align: middle; /* Konten rata tengah */
+}
+
+/* Kolom khusus Nomor dan Kode */
+table.dataTable tbody td.number,
+table.dataTable tbody td.code {
+  text-align: center; /* Teks rata tengah */
+  background-color: #F8FBF8; /* Warna latar khusus kolom */
+}
+
+table.dataTable thead th.number,
+table.dataTable thead th.code {
+  text-align: center; /* Teks rata tengah untuk header */
+}
+
+/* Pagination */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 6px 12px; /* Padding tombol */
+  margin: 0 2px; /* Margin antar tombol */
+  background-color: #135155; /* Warna tombol */
+  color: white !important; /* Warna teks tombol */
+  border: none; /* Hapus border */
+  border-radius: 4px; /* Sudut tombol melengkung */
+  cursor: pointer; /* Pointer saat hover */
+  margin-top: 2rem; /* Spasi atas */
+}
+
+/* Hover dan tombol aktif */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #FFC51E; /* Warna hover */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #FFC51E; /* Warna tombol aktif */
+  color: black !important; /* Warna teks tombol aktif */
+}
+
+/* Search filter */
+.dataTables_wrapper .dataTables_filter input {
+  padding: 6px; /* Padding input */
+  margin-left: 8px; /* Spasi kiri */
+  border: 1px solid #ddd; /* Border */
+  border-radius: 4px; /* Sudut melengkung */
+  margin-bottom: 2rem; /* Spasi bawah */
+}
+
+/* Dropdown untuk jumlah entri */
+.dataTables_wrapper .dataTables_length select {
+  padding: 6px; /* Padding dropdown */
+  margin-left: 8px; /* Spasi kiri */
+  border: 1px solid #ddd; /* Border */
+  border-radius: 4px; /* Sudut melengkung */
+  margin-bottom: 2rem; /* Spasi bawah */
+  background-color: #135155;
+  color: white !important;
+}
+
+.dataTables_wrapper .dataTables_length select:hover {
+
+  background-color: #135155;
+  color: white !important;
 }
 
 
+/* Informasi tambahan (info) */
+.dataTables_wrapper .dataTables_info {
+  margin-top: 10px; /* Spasi atas */
+  font-size: 14px; /* Ukuran font */
+}
 
 

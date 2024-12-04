@@ -5,6 +5,9 @@
     --font-inter: 'Inter', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
   }
+  .container-footer {
+    margin-top: 5rem;
+  }
   
     /* navbar css */
     body {
@@ -110,49 +113,6 @@
     width: 1146px;
   }
   /*  */
-
-  /* footer */
-footer {
-    font-family: var(--font-inter);
-    padding: 16px;
-  }
-  
-  .footer-icon {
-    color: #FFD43B; 
-    font-size: 20px;
-    margin-right: 10px;
-    background-color: #F8F8F8;
-    border-radius: 50%;
-    padding: 10px;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 20px;
-  }
-  
-  .footer-title {
-    color: #135155;
-    font-weight: bold;
-  }
-  
-  .footer-grid {
-    gap: 26px;
-    font-size: 16px;
-  }
-  
-  .footer a,
-  .footer p {
-    text-decoration: none;
-    color: #4A606B;
-  }
-  
-  /* Optional: Add some hover effects */
-  .footer a:hover {
-    color: #3b4d57;
-    text-decoration: underline;
-  }
-
   .hero-image {
     margin-bottom: -100px; /* Gambar di bawahnya akan tumpang tindih */
 }
@@ -186,7 +146,47 @@ footer {
   height: auto; /* Memastikan rasio gambar tetap */
 }
 
+/* footer */
+footer {
+  background-color: #fff;
+  font-family: var(--font-inter);
+  padding: 16px;
+}
 
+.footer-icon {
+  color: #ffd43b;
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.footer-title {
+  color: #135155;
+  font-weight: bold;
+}
+
+.footer-grid {
+  font-size: 16px;
+}
+
+.footer a,
+.footer p {
+  text-decoration: none;
+  color: #4a606b;
+}
+
+/* Optional: Add some hover effects */
+.footer a:hover {
+  color: #3b4d57;
+  text-decoration: underline;
+} 
   @media (max-width: 763px) {
     body {
       padding-top: 5rem;
@@ -218,12 +218,21 @@ footer {
         weight: 1000px;
       }
       .hero-image {
-        margin-bottom: -10px; /* Gambar di bawahnya akan tumpang tindih */
+        margin-bottom: -10px;
     }
     .custom-row {
-        flex-direction: column; /* Menumpuk gambar secara vertikal */
+        flex-direction: column;
     }
     .custom-col {
-        margin-bottom: 15px; /* Menambahkan jarak antar gambar */
+        margin-bottom: 15px;
     }
+    .carousel .row .col {
+      flex: 0 0 25%;
+      max-width: 25%;
+  }
+
+  .carousel img {
+      width: 100%;
+      height: auto;
+  }
   }
