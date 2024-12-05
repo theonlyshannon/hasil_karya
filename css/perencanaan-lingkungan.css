@@ -72,7 +72,7 @@ nav, .navbar {
 /* navbar css end */
 
 /* article css start */
-.article-card {
+.service-card {
   padding: 40px;
   max-width: 100%;
   box-shadow: 0 24px 72px rgba(0, 0, 0, 0.12);
@@ -114,6 +114,7 @@ nav, .navbar {
   font-weight: bold;
 }
 /*  */
+
 
 /* footer */
 footer {

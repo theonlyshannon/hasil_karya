@@ -75,7 +75,7 @@
   /* navbar css end */
 
   /*  */
-  div {
+  .center-content {
     position: relative; /* Parent harus relative untuk positioning anak */
     text-align: center; /* Agar teks berada di tengah horizontal */
   }
@@ -144,6 +144,11 @@
 .responsive-img {
   max-width: 100%; /* Membatasi lebar maksimum gambar agar tidak melampaui kontainer */
   height: auto; /* Memastikan rasio gambar tetap */
+}
+.carousel-item img {
+  width: 100%; /* Gambar memenuhi kolom */
+  height: auto; /* Jaga proporsi asli gambar */
+  object-fit: cover; /* Potong gambar jika perlu agar tetap terlihat rapi */
 }
 
 /* footer */
@@ -230,9 +235,9 @@ footer {
       flex: 0 0 25%;
       max-width: 25%;
   }
-
-  .carousel img {
-      width: 100%;
-      height: auto;
-  }
+  .carousel-item img {
+    width: 250px; /* Pastikan tetap melebar */
+    height: 150px; /* Tentukan tinggi gambar sesuai kebutuhan */
+    object-fit: cover; /* Potong jika gambar terlalu tinggi */
+}
   }
