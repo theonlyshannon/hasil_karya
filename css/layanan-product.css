@@ -291,3 +291,16 @@ footer {
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .feature-label {
+    border-radius: 50px;
+    background-color: #FFC51E;
+    font-size: 14px;
+    padding: 8px;
+    color: #135155;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
