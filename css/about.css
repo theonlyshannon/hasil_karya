@@ -373,6 +373,18 @@ text-decoration: underline;
 
 /* responsive mobile */
 @media (max-width: 768px) {
+  .feature-label {
+    border-radius: 50px;
+    background-color: #FABB050A;
+    padding: 12px;
+    font-size: 14px;
+    color: #FFC51E;     
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    white-space: nowrap;
+  }
   .container-rating {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -394,6 +406,7 @@ text-decoration: underline;
     background-position: right center; /* Mengatur posisi gambar ke kanan */
     background-size: contain; /* Agar gambar menyesuaikan ukurannya dengan card */
     height: 249px;
+    width: 342px;
     position: relative; /* Agar teks di atas gambar */
     z-index: 1; /* Menempatkan teks di atas gambar */
     transition: all 0.4s ease;

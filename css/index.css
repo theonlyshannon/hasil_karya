@@ -38,6 +38,7 @@
 body {
   padding-top: 8rem;
   margin-top: 0;
+  font-family: poppins;
   /* overflow-x: hidden; */
 }
 nav,
@@ -181,7 +182,13 @@ nav,
   transform: translate(-50%, -50%);
   width: 439px;
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.5); /* Transparan background */
+  background-color: rgba(0, 0, 0, 0.5); 
+  transition: all 0.3s ease;
+}
+.card-service {
+  transition: all 0.3s ease; /* Animasi smooth untuk efek hover */
+  position: relative;
+  overflow: hidden;
 }
 
 .product-service-title {
@@ -190,23 +197,32 @@ nav,
   font-size: 2rem;
   color: #ffffff;
 }
-
+.product-service-link {
+  font-family: var(--font-poppins);
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+.product-service-link:hover {
+  color: #ffffff;
+}
 .zoom-image {
   transition: transform 0.5s ease;
   transform-origin: center;
 }
 
 .product-service-card:hover {
-  transform: scale(1.1) translate(-50%, -50%);
+  transform: scale(1.1) translate(-55%, -40%);
   height: 90px;
-}
-
-.product-service-title:hover {
-  transform: scale(1.1);
 }
 .card-service:hover {
   box-shadow: 0 24px 72px rgba(0, 0, 0, 0.12);
   border-radius: 16px;
+}
+.card-service:hover .product-service-card {
+  transform: scale(1.1) translate(-50%, -50%);
+  height: 90px;
 }
 /* bussiness service end */
 
@@ -302,6 +318,10 @@ nav,
   display: inline-block;
   min-width: 53px;
 }
+.btn-custom-about:hover {
+  background-color: #0f4141;
+  color: white;
+}
 .company-description {
   font-family: var(--font-inter);
   font-size: 16px;
@@ -385,6 +405,10 @@ nav,
   height: 65px;
   width: auto; /* Lebar menyesuaikan konten */
   padding: 0 20px; /* Padding kiri kanan */
+}
+.btn-withus:hover {
+  background-color: #0f4141;
+  color: white; 
 }
 .form-inline-block {
   display: flex;
@@ -578,6 +602,17 @@ footer {
   .product-service-card {
     font-size: 1.2rem;
     height: 60px;
+  }
+  .feature-label {
+    background-color: #fabb050a;
+    padding: 12px;
+    font-size: 14px;
+    color: #ffc51e;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
   }
   /* hero responsive css end */
 
