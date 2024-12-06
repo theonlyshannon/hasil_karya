@@ -257,15 +257,15 @@ nav,
 }
 
 .article-title {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: 800; /* Applies bold to all but can be overridden */
   font-size: 24px;
   color: #135155;
 }
 .article-description {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   color: #4a606b;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .article-card img {
@@ -274,7 +274,7 @@ nav,
 }
 
 .title-link {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: bold; /* Applies bold to all but can be overridden */
   color: #135155;
 }
@@ -282,6 +282,7 @@ nav,
 .article-link {
   color: #0f7c83;
   font-family: var(--font-poppins);
+  font-size: 15px;
   font-weight: medium;
 }
 
@@ -323,11 +324,11 @@ nav,
   color: white;
 }
 .company-description {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
 }
 .company-benefit {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
 }
 /* about company css end */
@@ -486,18 +487,18 @@ nav,
 }
 .card-text {
   color: #4a606b;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 18px;
 }
 .card-user {
   color: #135155;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: bold;
 }
 .card-job {
   color: #4a606b;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
 }
 /* product end */
@@ -505,7 +506,7 @@ nav,
 /* footer */
 footer {
   background-color: #fff;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   padding: 16px;
 }
 
@@ -698,7 +699,7 @@ footer {
 
   /* article resposive start */
   .article {
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-weight: bold;
   }  
   .article-card {
@@ -711,13 +712,13 @@ footer {
     transform: translateY(-5px);
   }
   .article-title {
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-weight: 800; /* Applies bold to all but can be overridden */
     font-size: 18px;
     color: #135155;
   }
   .article-description {
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     color: #4a606b;
     font-size: 16px;
   }
@@ -810,6 +811,17 @@ footer {
     font-size: 1.2rem;
     height: 60px;
   }
+  .feature-label {
+    background-color: #fabb050a;
+    padding: 12px;
+    font-size: 10px;
+    color: #ffc51e;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+  }
   /* hero responsive css end */
 
   /* about company responsive css start */
@@ -870,6 +882,13 @@ footer {
     height: auto;
     border-radius: 16px;
     margin: auto;
+  }
+  .product-service-link {
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
   }
   /* product responsive css end */
 

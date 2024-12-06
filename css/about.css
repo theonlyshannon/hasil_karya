@@ -21,7 +21,7 @@ nav, .navbar {
   box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
   backdrop-filter: blur(56px);
   background-color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: 600;
   display: flex;
@@ -70,7 +70,7 @@ nav, .navbar {
 }
 .dropdown-menu, .dropdown-item {
   color: #4A606B;
-  font-family:  var(--font-inter);
+  font-family:  var(--font-poppins);
   font-size: 16px;
   font-weight: normal;
 }
@@ -269,6 +269,7 @@ color: #0F7C83;
 /* accordion */
 .accordion-button {
   background-color: #0F7C83;
+  font-family: var(--font-poppins);
   color: #fff;
 }
 
@@ -290,6 +291,7 @@ color: #0F7C83;
 
 .accordion-item {
   border: none; /* Remove the default border for accordion flush */
+  font-family: var(--font-poppins);
 }
 
 .accordion-button:focus {
@@ -330,7 +332,7 @@ color: #0F7C83;
 
 /* footer */
 footer {
-font-family: var(--font-inter);
+font-family: var(--font-poppins);
 padding: 16px;
 }
 
@@ -394,7 +396,8 @@ text-decoration: underline;
     height: 136px;
     width: 342px;
     transition: all 0.4s ease;
-    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+    margin: auto;
   }
   .card-vision:hover {
     transform: scale(0.95);
@@ -411,6 +414,7 @@ text-decoration: underline;
     z-index: 1; /* Menempatkan teks di atas gambar */
     transition: all 0.4s ease;
     padding: 8px;
+    margin: auto;
   } 
   .card-mision:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);

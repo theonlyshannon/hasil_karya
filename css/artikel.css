@@ -65,7 +65,7 @@ nav, .navbar {
 }
 .dropdown-menu, .dropdown-item {
   color: #4A606B;
-  font-family:  var(--font-inter);
+  font-family:  var(--font-poppins);
   font-size: 16px;
   font-weight: normal;
 }
@@ -75,6 +75,7 @@ nav, .navbar {
 .category-label {
   border-radius: 50px;
   background-color: var(--color-gray-100);
+  font-family: var(--font-poppins);
   padding: 8px;
   color: #135155;
   font-weight: 500;
@@ -85,6 +86,7 @@ nav, .navbar {
 
 .link-label {
   text-decoration: none;
+  font-weight: medium;
   color: #135155;
   transition: color 0.3s ease;
 }
@@ -93,8 +95,15 @@ nav, .navbar {
   color: #009EDF;
 }
 
+.article-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .article {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: bold;
 }
 
@@ -111,15 +120,15 @@ nav, .navbar {
 
 
 .article-title {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: 800; /* Applies bold to all but can be overridden */
   font-size: 24px;
   color: #135155;
 }
 .article-description {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   color: #4A606B;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .article-card img {
@@ -127,15 +136,10 @@ nav, .navbar {
   height: auto;
 }
 
-.title-link {
-  font-family: var(--font-inter);
-  font-weight: bold; /* Applies bold to all but can be overridden */
-  color: #135155;
-}
-
 .article-link {
   color: #0F7C83;
   font-family: var(--font-poppins);
+  font-size: 15px;
   font-weight: medium;
 }
 
@@ -163,7 +167,7 @@ nav, .navbar {
 /* footer */
 footer {
   background-color: #FFF;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   padding: 16px;
 }
 
@@ -211,13 +215,13 @@ footer {
     font-size: 14px;
   } 
   .article-title {
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-weight: 800; /* Applies bold to all but can be overridden */
     font-size: 20px;
     color: #135155;
   }
   .article-description {
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     color: #4A606B;
     font-size: 16px;
   } 

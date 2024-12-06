@@ -17,7 +17,7 @@ nav,
   box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
   backdrop-filter: blur(56px);
   background-color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: 600;
   display: flex;
@@ -68,7 +68,7 @@ nav,
 .dropdown-menu,
 .dropdown-item {
   color: #4a606b;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: normal;
 }
@@ -94,6 +94,12 @@ nav,
   margin-top: 7rem;
   margin-bottom: 5rem;
 }
+.feature {
+  display: flex;
+  flex-wrap: wrap; /* Mengizinkan elemen membungkus ke baris baru */
+  gap: 10px; /* Memberikan jarak antar elemen */
+}
+
 .feature-label {
   border-radius: 50px;
   background-color: #FFC51E;
@@ -105,7 +111,7 @@ nav,
   white-space: nowrap;
 }
 .label {
-  font-family: var(--font-inter); 
+  font-family: var(--font-poppins); 
   font-weight: 600; 
   color: #171717;
   margin: 0; 
@@ -152,7 +158,7 @@ nav,
   white-space: nowrap;
 }
 .category-label {
-  font-family: var(--font-inter); 
+  font-family: var(--font-poppins); 
   font-weight: 600; 
   color: #171717;
   margin: 0; 
@@ -163,25 +169,25 @@ nav,
   padding: 18px;
 }
 .subscribe-category {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: bold; 
   font-size: 20px;
   color: #135155;
 }
 .feature-card {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: 600; 
   font-size: 16px;
   color: #4A606B;
 }
 .subscribe-price {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: 800; /* Applies bold to all but can be overridden */
   font-size: 24px;
   color: #FFC51E;
 }
 .subscribe-description {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   color: #4A606B;
   font-size: 16px;
   line-height: 32px;
@@ -205,7 +211,7 @@ nav,
   z-index: 1;
 }
 .benefit {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   color: #135155;
   font-size: 16px;
   font-weight: bold;
@@ -251,7 +257,7 @@ nav,
 
 /* footer */
 footer {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   padding: 16px;
 }
 
