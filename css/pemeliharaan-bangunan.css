@@ -7,6 +7,9 @@
 }
 
   /* navbar css */
+  * {
+    font-family: var(--font-poppins);
+  }
   body {
     padding-top: 8rem; 
   } 
@@ -16,7 +19,7 @@ nav, .navbar {
   box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
   backdrop-filter: blur(56px);
   background-color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: 600;
   display: flex;
@@ -89,7 +92,7 @@ nav, .navbar {
 }
 .description-title {
   color: #4A606B;
-  font-family:  var(--font-inter);
+  font-family:  var(--font-poppins);
   font-size: 14px;
   font-weight: normal;
 }
@@ -101,7 +104,7 @@ nav, .navbar {
 }
 .service-description {
   color: #4A606B;
-  font-family:  var(--font-inter);
+  font-family:  var(--font-poppins);
   font-size: 16px;
   font-weight: normal;
 }
@@ -118,7 +121,7 @@ nav, .navbar {
 /* footer */
 footer {
   background-color: #fff;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   padding: 16px;
 }
 

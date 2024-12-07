@@ -195,6 +195,8 @@ footer {
   @media (max-width: 763px) {
     body {
       padding-top: 5rem;
+      overflow-x: hidden;
+      margin: auto;
       }
     h1 {
       position: absolute;

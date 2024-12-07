@@ -7,9 +7,13 @@
 }
 
 /* navbar css */
+*{
+  font-family: poppins;
+}
 body {
   padding-top: 8rem;
   background-color: #f8f8f8;
+  font-family: poppins;
 }
 nav,
 .navbar {
@@ -18,7 +22,7 @@ nav,
   box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
   backdrop-filter: blur(56px);
   background-color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   display: flex;
   font-size: 16px;
   font-weight: 600;
@@ -84,7 +88,7 @@ nav,
 .dropdown-menu,
 .dropdown-item {
   color: #4a606b;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: normal;
 }
@@ -104,7 +108,7 @@ nav,
   font-size: 40px;
 }
 .product-description {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: normal;
   font-size: 16x;
   line-height: 32px;
@@ -120,7 +124,7 @@ h2 {
 }
 
 .accordion-bold {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   color: #4a606b;
   font-weight: 700;
@@ -128,7 +132,7 @@ h2 {
 }
 
 .accordion-body {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   color: #4a606b;
   line-height: 32px;
@@ -153,7 +157,7 @@ h2 {
 
 .accordion-button {
   background-color: transparent;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 18px;
   color: #2e2e2e;
   font-weight: bold;
@@ -181,7 +185,7 @@ h2 {
 
 /* footer */
 footer {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   padding: 16px;
 }
 
@@ -230,7 +234,7 @@ footer {
   }
   .accordion-button {
     background-color: transparent;
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-size: 14px;
     color: #2e2e2e;
     font-weight: bold;
@@ -250,7 +254,7 @@ footer {
   }
   .accordion-button {
     background-color: transparent;
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-size: 14px;
     color: #2e2e2e;
     font-weight: bold;

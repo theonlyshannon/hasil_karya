@@ -48,7 +48,7 @@ nav,
   box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: 600;
   display: flex;
@@ -99,7 +99,7 @@ nav,
 .dropdown-menu,
 .dropdown-item {
   color: #4a606b;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: normal;
 }
@@ -117,13 +117,21 @@ nav,
   text-align: center;
   white-space: nowrap;
 }
+.container-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Teks dan gambar berdampingan */
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.text-content {
+  grid-column: 1;
+  grid-row: 1;
+}
 .hero-image { 
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: ;
-  width: 588px; /* Atur ukuran sesuai kebutuhan */
-  margin-top: 6rem;
+  max-width: 120%; 
+  grid-column: 2;
+  grid-row: 1;
 }
 .hero-label {
   font-family: var(--font-poppins);
@@ -133,6 +141,8 @@ nav,
 .hero-card {
   background-color: #f8f8f8;
   padding: 8px;
+  grid-column: 1 / span 2; /* Meluas di dua kolom */
+  grid-row: 2; 
   width: 751px;
   height: 149px;
 }
@@ -241,7 +251,7 @@ nav,
 
 /* article css start */
 .article {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: bold;
 }
 
@@ -899,6 +909,13 @@ footer {
   .product-service-title {
     font-size: 18px;
   }
+  .product-service-link {
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+  }
   .card:hover .product-service-card {
     transform: scale(1) translate(-50%, -40%); /* Enlarges glass and keeps it centered */
   }
@@ -916,7 +933,7 @@ footer {
 
     /* article resposive start */
     .article {
-      font-family: var(--font-inter);
+      font-family: var(--font-poppins);
       font-weight: bold;
     }  
     .article-card {
@@ -929,13 +946,13 @@ footer {
       transform: translateY(-5px);
     }
     .article-title {
-      font-family: var(--font-inter);
+      font-family: var(--font-poppins);
       font-weight: 800; /* Applies bold to all but can be overridden */
       font-size: 18px;
       color: #135155;
     }
     .article-description {
-      font-family: var(--font-inter);
+      font-family: var(--font-poppins);
       color: #4a606b;
       font-size: 16px;
     }
@@ -973,3 +990,4 @@ footer {
   }
   /* with us responsive end */
 }
+

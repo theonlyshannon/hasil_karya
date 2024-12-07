@@ -16,7 +16,7 @@
     box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
     backdrop-filter: blur(56px);
     background-color: rgba(255, 255, 255, 0.8);
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-size: 16px;
     font-weight: 600;
     display: flex;
@@ -79,7 +79,7 @@
   }
   .dropdown-menu, .dropdown-item {
     color: #4A606B;
-    font-family:  var(--font-inter);
+    font-family:  var(--font-poppins);
     font-size: 16px;
     font-weight: normal;
   }
@@ -101,7 +101,7 @@
 
 }
 .product-description {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-weight: normal;
   font-size: 16x;
   line-height: 32px;
@@ -111,7 +111,7 @@
 }
 
 .accordion-header, h2 {
-font-family: var(--font-inter);
+font-family: var(--font-poppins);
 font-size: 24px;
 color: #2E2E2E;
 font-weight: 500;
@@ -119,7 +119,7 @@ line-height: 1.4;
 }
 
 .accordion-bold {
-font-family: var(--font-inter);
+font-family: var(--font-poppins);
 font-size: 16px;
 color:  #4A606B;
 font-weight: 700;
@@ -127,7 +127,7 @@ line-height: 1.4;
 }
 
 .accordion-body {
-font-family: var(--font-inter);
+font-family: var(--font-poppins);
 font-size: 16px;
 color: #4A606B;
 line-height: 32px;
@@ -152,7 +152,7 @@ box-shadow: none; /* Removes the default Bootstrap focus shadow */
 
 .accordion-button {
 background-color: transparent;
-font-family: var(--font-inter);
+font-family: var(--font-poppins);
 font-size: 18px;
 color: #2E2E2E;
 font-weight: bold;
@@ -182,7 +182,7 @@ background-color: transparent;
   /* footer */
 footer {
   background-color: #FFF;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   padding: 16px;
 }
 
@@ -231,7 +231,7 @@ footer {
   }
   .accordion-button {
     background-color: transparent;
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-size: 14px;
     color: #2E2E2E;
     font-weight: bold;
@@ -252,7 +252,7 @@ footer {
   }
   .accordion-button {
     background-color: transparent;
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-size: 14px;
     color: #2E2E2E;
     font-weight: bold;

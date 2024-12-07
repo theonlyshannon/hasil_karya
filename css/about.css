@@ -14,6 +14,7 @@
   /* navbar css */
   body {
     padding-top: 8rem; 
+    font-family: var(--font-poppins);
   } 
 nav, .navbar {
   padding-left: 2rem;
