@@ -71,7 +71,7 @@
   .dropdown-menu,
   .dropdown-item {
     color: #4a606b;
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-size: 16px;
     font-weight: normal;
   }
@@ -92,7 +92,7 @@
 .description-title {
   color: #4A606B;
   font-family:  var(--font-poppins);
-  font-size: 16px;
+  font-size: 14px;
 }
 .service-description {
   color: #4A606B;

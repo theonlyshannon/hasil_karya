@@ -16,7 +16,7 @@ nav, .navbar {
   box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
   backdrop-filter: blur(56px);
   background-color: rgba(255, 255, 255, 0.8);
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-weight: 600;
   display: flex;
