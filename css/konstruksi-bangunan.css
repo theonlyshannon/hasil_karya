@@ -38,7 +38,7 @@ margin-left: 0.5rem;
 margin-right: 0.5rem;
 }
 .navbar-brand img {
-max-height: 40px;
+max-height: 55px;
 }
 .btn-primary {
 margin-right: 2rem;
@@ -157,6 +157,13 @@ footer {
 }
 
 @media (max-width: 763px) {
+  .navbar-brand {
+    padding-left: 10px;
+    display: flex;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
   .service-card {
     padding: 30px;
     max-width: 100%;

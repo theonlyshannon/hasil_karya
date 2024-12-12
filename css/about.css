@@ -41,7 +41,7 @@ nav, .navbar {
   margin-right: 0.5rem;
 }
 .navbar-brand img {
-  max-height: 40px;
+  max-height: 55px;
 }
 .btn-primary {
   margin-right: 2rem;
@@ -376,6 +376,13 @@ text-decoration: underline;
 
 /* responsive mobile */
 @media (max-width: 768px) {
+  .navbar-brand {
+    padding-left: 10px;
+    display: flex;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
   .feature-label {
     border-radius: 50px;
     background-color: #FABB050A;
@@ -388,7 +395,7 @@ text-decoration: underline;
     text-align: center; 
     white-space: nowrap;
   }
-  .container-rating {
+  .container-rating { 
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -466,4 +473,5 @@ text-decoration: underline;
       text-align: center; /* Pusatkan teks */
       transition: opacity 0.5s ease, max-height 0.5s ease;
     }
+    
 }

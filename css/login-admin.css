@@ -26,7 +26,7 @@ body, html {
 }
 .login-card {
     width: 100%;
-    max-width: 600px; /* Card size */
+    max-width: 600px;
     padding: 20px;
     box-shadow: 10px 16px 45px -16px rgba(0,0,0,0.64);
 }
@@ -36,7 +36,7 @@ body, html {
     font-weight: bold;
 }
 .btn-custom {
-    display: block; 
+    display: block;
     font-family: poppins;
     width: 100%;    
     padding: 10px;  
@@ -47,41 +47,33 @@ body, html {
     border-radius: 4px; 
     cursor: pointer;
 }
-
 .d-flex {
     display: flex;
 }
-
 .divider {
     width: 5px;
     background-color: #FFC51E;
     margin-right: 20px;
-    height: 185px; /* Menyesuaikan tinggi dengan container email dan password */
-    align-self: stretch; /* Memastikan divider mengisi seluruh tinggi input */
+    height: 185px;
+    align-self: stretch;
 }
-
 .flex-grow-1 {
-    flex-grow: 1; /* Membuat form input email dan password menempati sisa ruang */
+    flex-grow: 1;
 }
-
 .bg-custom {
-    background-color: #0F7C83; /* Contoh warna latar belakang */
+    background-color: #0F7C83;
 }
-
 .bg-white {
     background-color: #ffffff;
 }
-
-
-/* Perbesar input field */
 input[type="email"], input[type="password"] {
-    height: 50px; /* Sesuaikan ukuran tinggi */
-    font-size: 18px; /* Sesuaikan ukuran font */
-    padding: 10px; /* Sesuaikan padding */
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
 }
 .input-group .form-control placeholder {
-    flex: 1 1 auto; /* Pastikan input mengisi space yang tersisa */
-    height: 50px; /* Tetapkan tinggi yang sama dengan input */
+    flex: 1 1 auto;
+    height: 50px;
 }
 .form-check-label{ 
     font-family: poppins;
@@ -100,18 +92,15 @@ input[type="email"], input[type="password"] {
     color: #4A606B;
 }
 .input-group .btn {
-    height: 50px; /* Samakan tinggi tombol dengan input */
+    height: 50px;
 }
-
 .container-fluid {
     padding: 0; 
     margin: 0; 
 }
-
 .row {
     margin: 0; 
 }
-
 .glass-card {
     background: rgba(190, 190, 190, 0.2);
     border-radius: 15px;
@@ -121,45 +110,37 @@ input[type="email"], input[type="password"] {
     border: 1px solid rgba(255, 255, 255, 0.3);
     overflow: hidden;
 }
-
 .glass-card .card-body {
     color: #fff; 
     text-shadow: 9px 14px 86px 0px rgba(0,0,0,0.42); 
 }
-
 .floating-card {
     animation: floating 3s ease-in-out infinite; 
 }
-
-/* Hover Effect */
 .floating-card:hover {
     transform: scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
-
 .img-background {
-    position: absolute; /* Membuat gambar tidak memengaruhi layout */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Untuk memastikan gambar sesuai dengan container */
-    opacity: 0.7; /* Opsional: Menambahkan transparansi */
+    object-fit: cover;
+    opacity: 0.7;
 }
-
-
 @keyframes floating {
     0% {
-        transform: translateY(0px); /* Posisi awal */
+        transform: translateY(0px);
     }
     50% {
-        transform: translateY(-10px); /* Naik ke atas */
+        transform: translateY(-10px);
     }
     100% {
-        transform: translateY(0px); /* Kembali ke posisi awal */
+        transform: translateY(0px);
     }
 }
-
 @media (max-width: 768px) {
     .card-title {
         font-family: poppins;

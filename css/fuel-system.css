@@ -36,7 +36,7 @@
     margin-right: 0.5rem;
   }
   .navbar-brand img {
-    max-height: 40px;
+    max-height: 55px;
   }
   .btn-primary {
     margin-right: 2rem;
@@ -221,6 +221,13 @@ footer {
 }
 
 @media (max-width: 963px) {
+  .navbar-brand {
+    padding-left: 10px;
+    display: flex;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
   .product-title {
     font-family: var(--font-poppins);
     font-weight: 800;

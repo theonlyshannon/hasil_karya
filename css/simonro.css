@@ -246,6 +246,13 @@ footer {
 }
 
 @media (max-width: 763px) {
+    .navbar-brand {
+      padding-left: 10px;
+      display: flex;
+    }
+    .navbar-brand img {
+      max-height: 40px;
+    }
   .product-title {
     font-family: var(--font-poppins);
     font-weight: 800;

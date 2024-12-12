@@ -67,7 +67,7 @@ nav,
   margin-right: 0.5rem;
 }
 .navbar-brand img {
-  max-height: 40px;
+  max-height: 55px;
 }
 .btn-primary {
   margin-right: 2rem;
@@ -707,6 +707,8 @@ footer {
   }
   /* bussiness responsive end */
 
+  /*  */
+
   /* article resposive start */
   .article {
     font-family: var(--font-poppins);
@@ -784,7 +786,13 @@ footer {
     font-size: 32px;
     font-weight: bold;
   }
-
+  .navbar-brand {
+    padding-left: 10px;
+    display: flex;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
   .hero-description {
     font-family: var(--font-poppins);
     font-weight: small;
@@ -922,6 +930,13 @@ footer {
 
   .card:hover .product-service-title {
     transform: scale(1); /* Enlarges the text */
+  }
+  .card-service {
+    margin: 10px auto;
+  }
+
+.product-service-title {
+    font-size: 1.2rem;
   }
   /* bussiness responsive end */
 

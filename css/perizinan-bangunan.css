@@ -50,7 +50,7 @@ nav,
 }
 
 .navbar-brand img {
-  max-height: 40px;
+  max-height: 55px;
 }
 
 .btn-primary {
@@ -238,6 +238,16 @@ table.dataTable thead th.code {
 .dataTables_wrapper .dataTables_info {
   margin-top: 10px; /* Spasi atas */
   font-size: 14px; /* Ukuran font */
+}
+
+@media (max-width: 763px) {
+  .navbar-brand {
+    padding-left: 10px;
+    display: flex;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
 }
 
 
