@@ -773,10 +773,10 @@ footer {
   /* hero responsive css start */
   .hero-image {
     position: static;
-    width: 365px;
+    width: 320px;
     display: flex;
     align-items: center;
-    height: 500px;
+    height: 450px;
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -802,7 +802,7 @@ footer {
   .hero-card {
     background-color: #f8f8f8;
     padding: 8px;
-    width: 374px;
+    width: 320px;
     height: auto;
     display: flex;
     flex-direction: column;
