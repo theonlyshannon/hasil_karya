@@ -8,7 +8,6 @@
   .container-footer {
     margin-top: 5rem;
   }
-  
     /* navbar css */
     body {
       overflow-x: hidden;
@@ -19,7 +18,7 @@
     box-shadow: 0 25px 25px rgba(35, 35, 35, 0.04);
     backdrop-filter: blur(56px);
     background-color: rgba(255, 255, 255, 0.8);
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-size: 16px;
     font-weight: 600;
     display: flex;
@@ -68,7 +67,7 @@
   }
   .dropdown-menu, .dropdown-item {
     color: #4A606B;
-    font-family:  var(--font-inter);
+    font-family:  var(--font-poppins);
     font-size: 16px;
     font-weight: normal;
   }
@@ -154,7 +153,7 @@
 /* footer */
 footer {
   background-color: #fff;
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   padding: 16px;
 }
 
@@ -193,6 +192,9 @@ footer {
   text-decoration: underline;
 } 
   @media (max-width: 763px) {
+    img .img-fluid .project-image{
+      height: 200px;
+    }
     body {
       padding-top: 5rem;
       overflow-x: hidden;
@@ -233,6 +235,7 @@ footer {
       }
       .hero-image {
         margin-bottom: -10px;
+        height: 12rem;
     }
     .custom-row {
         flex-direction: column;

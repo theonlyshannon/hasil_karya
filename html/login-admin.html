@@ -10,6 +10,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="shortcut icon" href="../public/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/login-admin.css">
     <!-- <link rel="stylesheet" href="../css/global.css" /> -->
@@ -17,10 +18,10 @@
 </head>
 
 <body>
-    <div class="container-fluid vh-100 d-flex">
+    <div class="container-fluid vh-100 d-flex login-container">
         <div class="row w-100 ">
             <!-- Kolom Login -->
-            <div class="col-md-6 d-flex justify-content-center align-items-center bg-white">
+            <div class="col-md-6 d-flex justify-content-center align-items-center bg-white login-admin">
                 <div class="card login-card shadow-sm">
                     <div class="card-body">
                         <div class="card-image img-fluid d-flex justify-content-center">
@@ -65,13 +66,12 @@
                 </div>
             </div>
 
-            <!-- Kolom Background -->
             <div class="col-md-6 bg-custom d-flex flex-column justify-content-center d-none d-md-flex">
                 <img src="/public/login/background.png" alt="background" class="img-background">
                 <div class="col align-self-start mt-5">
                     <div class="card glass-card floating-card" style="width: 18rem; padding: 15px;">
                         <img class="card-img-top" src="/public/login/konstruksi-bangunan.png" alt="Card image cap">
-                        <div class="card-body">
+                        <div class="card-body-image">
                             <i class="fa-solid fa-circle-check" class="icon-feature"
                                 style="color: #FFD43B; margin-right: 1rem;"></i>Konstruksi Bangunan
                         </div>
@@ -80,7 +80,7 @@
                 <div class="col align-self-center">
                     <div class="card glass-card floating-card" style="width: 18rem; padding: 15px;">
                         <img class="card-img-top" src="/public/login/perizinan-bangunan.png" alt="Card image cap">
-                        <div class="card-body">
+                        <div class="card-body-image">
                             <i class="fa-solid fa-circle-check" class="icon-feature"
                                 style="color: #FFD43B; margin-right: 1rem;"></i>perizinan-bangunan
                         </div>
@@ -101,18 +101,16 @@
 
 
 
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/custom.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            const passwordIcon = document.getElementById('passwordIcon');
+            const isPassword = passwordInput.type === 'password';
 
-</html>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            passwordInput.type = isPassword ? 'text' : 'password';
+            passwordIcon.className = isPassword ? 'bi bi-eye-slash' : 'bi bi-eye';
+        });
+    </script>
 </body>
 
 </html>

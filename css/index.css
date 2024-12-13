@@ -887,7 +887,7 @@ footer {
     padding: var(--padding-base);
     box-shadow: 0 24px 72px rgba(0, 0, 0, 0.08);
     margin-bottom: 24px;
-    width: 365px;
+    width: 320px;
     height: auto;
     border-radius: 16px;
     margin: auto;
@@ -896,7 +896,7 @@ footer {
     padding: var(--padding-base);
     background-color: #e7e7ff;
     box-shadow: 0 24px 72px rgba(0, 0, 0, 0.08);
-    width: 365px;
+    width: 320px;
     height: auto;
     border-radius: 16px;
     margin: auto;
@@ -933,6 +933,7 @@ footer {
   }
   .card-service {
     margin: 10px auto;
+    height: auto;
   }
 
 .product-service-title {

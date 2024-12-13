@@ -15,24 +15,24 @@ body, html {
 .login-card {
     padding: 24px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Batas maksimum lebar card */
-    width: 100%; /* Card memenuhi lebar kontainer */
-    margin: 20px auto; /* Tambahkan margin otomatis */
-    padding: 20px; /* Atur padding agar tidak terlalu besar */
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
 }
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height of the viewport */
-    background-image: url('/public/login/anuan.png'); /* Tambahkan path gambar */
-    background-size: cover; /* Membuat gambar menutupi seluruh layar */
-    background-position: center; /* Posisikan gambar di tengah */
-    background-repeat: no-repeat; /* Jangan ulangi gambar */
+    height: 100vh;
+    background-image: url('/public/login/anuan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .login-card {
     width: 100%;
-    max-width: 600px; /* Card size */
+    max-width: 600px;
     padding: 20px;
     box-shadow: 10px 16px 45px -16px rgba(0,0,0,0.64);
 }
@@ -53,33 +53,43 @@ body, html {
     border-radius: 4px; 
     cursor: pointer;
 }
-
 .d-flex {
     display: flex;
 }
-
 .divider {
     width: 5px;
     background-color: #FFC51E;
     margin-right: 20px;
-    height: 185px; /* Menyesuaikan tinggi dengan container email dan password */
-    align-self: stretch; /* Memastikan divider mengisi seluruh tinggi input */
+    height: 185px;
+    align-self: stretch;
 }
-
 .flex-grow-1 {
-    flex-grow: 1; /* Membuat form input email dan password menempati sisa ruang */
+    flex-grow: 1;
 }
-
-
-/* Perbesar input field */
 input[type="email"], input[type="password"] {
-    height: 50px; /* Sesuaikan ukuran tinggi */
-    font-size: 18px; /* Sesuaikan ukuran font */
-    padding: 10px; /* Sesuaikan padding */
+    font-family: poppins;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+}
+.form-label {
+    font-family: poppins;
+    font-size: 16px;
+    color: #4A606B;
+}
+#passwordIcon {
+    font-size: 16px; /* Ukuran tetap */
+    line-height: 1;  /* Jaga proporsi */
+    display: inline-block;
+}
+.card-login {
+    font-family: poppins;
+    font-size: 14px;
+    color: #4A606B;
 }
 .input-group .form-control placeholder {
-    flex: 1 1 auto; /* Pastikan input mengisi space yang tersisa */
-    height: 50px; /* Tetapkan tinggi yang sama dengan input */
+    flex: 1 1 auto;
+    height: 50px;
 }
 .form-check-label{ 
     font-family: poppins;
@@ -98,12 +108,16 @@ input[type="email"], input[type="password"] {
     color: #4A606B;
 }
 .input-group .btn {
-    height: 50px; /* Samakan tinggi tombol dengan input */
+    height: 50px;
 }
 @media (max-width: 768px) {
+    .img-fluid img {
+        height: 60px;
+        width: 100px;
+    }
     .card-title {
         font-family: poppins;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: bold;
         margin-bottom: 16px;
     }
@@ -117,7 +131,7 @@ input[type="email"], input[type="password"] {
         padding: 15px;
     }
     input[type="email"], input[type="password"] {
-        height: 45px;
+        height: 50px;
         font-size: 16px;
         padding: 10px;
     }
@@ -146,5 +160,10 @@ input[type="email"], input[type="password"] {
     }
     .input-group .btn {
         height: 50px;
+    }
+    .form-label {
+        font-family: poppins;
+        font-size: 14px;
+        color: #4A606B;
     }
 }

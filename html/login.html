@@ -21,17 +21,24 @@
                 <h2 class="card-title text-center">Login EWS</h2>
                 <p class="card-login text-center text-muted mb-4">Silahkan Login Dengan Akun Anda</p>
                 <form action="/login" method="POST">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <div class="input-group">
-                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-                            <button type="button" class="btn btn-outline-secondary" id="togglePassword">
-                                <i class="bi bi-eye" id="passwordIcon"></i>
-                            </button>
+                    <div class="d-flex">
+                        <div class="divider"></div>
+                        <div class="flex-grow-1">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Enter your password" required>
+                                    <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                                        <i class="bi bi-eye" id="passwordIcon"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3 d-flex justify-content-between align-items-center">
@@ -39,7 +46,8 @@
                             <input type="checkbox" class="form-check-input" id="remember">
                             <label class="form-check-label" for="remember">Remember me</label>
                         </div>
-                        <a href="/forgot-password" class="text-decoration-none forgot-password-label">Forgot password?</a>
+                        <a href="/forgot-password" class="text-decoration-none forgot-password-label">Forgot
+                            password?</a>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <button type="submit" class="btn btn-custom">Login</button>
@@ -53,11 +61,19 @@
         document.getElementById('togglePassword').addEventListener('click', function () {
             const passwordInput = document.getElementById('password');
             const passwordIcon = document.getElementById('passwordIcon');
-            const isPassword = passwordInput.type === 'password';
 
-            passwordInput.type = isPassword ? 'text' : 'password';
-            passwordIcon.className = isPassword ? 'bi bi-eye-slash' : 'bi bi-eye';
+            // Toggle tipe input antara 'password' dan 'text'
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordIcon.classList.remove('bi-eye');
+                passwordIcon.classList.add('bi-eye-slash'); // Ikon saat terlihat
+            } else {
+                passwordInput.type = 'password';
+                passwordIcon.classList.remove('bi-eye-slash');
+                passwordIcon.classList.add('bi-eye'); // Ikon saat tersembunyi
+            }
         });
+
     </script>
 </body>
 
