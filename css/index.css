@@ -30,16 +30,18 @@
   margin-top: 5rem;
 }
 /* navbar css */
-* {
+/* * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-}
+} */
 body {
   padding-top: 8rem;
   margin-top: 0;
   font-family: poppins;
-  /* overflow-x: hidden; */
+}
+.company-line {
+  width: ;
 }
 nav,
 .navbar {
