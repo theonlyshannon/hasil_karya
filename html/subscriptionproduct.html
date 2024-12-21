@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="shortcut icon" href="../public/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/layanan-product.css" />
@@ -61,16 +62,17 @@
     <!-- navbar end -->
 
     <div class="container container-subscribe">
-        <div class="header-subscribe text-center">
+        <div class="header-subscribe text-center"  data-aos="fade-up" data-aos-duration="900">
             <h1 class="header-subscribe-title">Paket Langganan</h1>
             <p class="header-subscribe-description">
                 SiMonRo merupakan sistem yang dirancang untuk mengelola data proyek. <br> Dengan memastikan bahwa proyek
                 dapat berjalan.
             </p>
         </div>
+
         <div class="row">
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
                 <div class="subscribe-card">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
@@ -118,7 +120,7 @@
 
             </div>
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
                 <div class="subscribe-card card-recomended">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
@@ -165,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
                 <div class="subscribe-card">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
@@ -215,8 +217,9 @@
 
     <!-- product subscription start -->
     <div class="container container-product">
+
         <!-- SiMonRo Section -->
-        <div class="row align-items-center">
+        <div class="row align-items-center" data-aos="fade-up" data-aos-duration="900">
             <div class="col-md-6">
                 <img src="../public/subscription/simonro.png" alt="" class="img-fluid">
             </div>
@@ -248,7 +251,7 @@
         </div>
 
         <!-- Fuel System Section -->
-        <div class="row align-items-center mt-5">
+        <div class="row align-items-center mt-5" data-aos="fade-up" data-aos-duration="900">
             <div class="col-md-6 order-md-2">
                 <img src="../public/subscription/fuelsystem.png" alt="" class="img-fluid">
             </div>
@@ -277,7 +280,7 @@
 
 
         <!-- EWS Section -->
-        <div class="row align-items-center mt-5">
+        <div class="row align-items-center mt-5" data-aos="fade-up" data-aos-duration="900">
             <div class="col-md-6">
                 <img src="../public/subscription/ews.png" alt="" class="img-fluid">
             </div>
@@ -311,7 +314,7 @@
         </div>
 
         <!-- EWS Box Section -->
-        <div class="row align-items-center mt-5">
+        <div class="row align-items-center mt-5" data-aos="fade-up" data-aos-duration="900">
             <div class="col-md-6 order-md-2">
                 <img src="../public/subscription/ewsbox.png" alt="" class="img-fluid">
             </div>
@@ -396,6 +399,12 @@
     </div>
 
     <!-- Javascript end -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once:true,
+      });
+    </script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/custom.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
