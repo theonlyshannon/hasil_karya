@@ -233,3 +233,35 @@ footer {
     font-size: 16px;
   } 
 }
+
+@media (max-width: 768px) {
+  nav,
+  .navbar {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .navbar-brand {
+    padding-left: 10px;
+    display: flex;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  } 
+  .article-link {
+    color: #0F7C83;
+    font-family: var(--font-poppins);
+    font-weight: medium;
+    font-size: 14px;
+  } 
+  .article-title {
+    font-family: var(--font-poppins);
+    font-weight: 800; /* Applies bold to all but can be overridden */
+    font-size: 20px;
+    color: #135155;
+  }
+  .article-description {
+    font-family: var(--font-poppins);
+    color: #4A606B;
+    font-size: 16px;
+  } 
+}

@@ -12,7 +12,7 @@
   margin-top: 3rem;
 }
 .container-service {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 .container-article {
   margin-top: 5rem;
@@ -788,6 +788,11 @@ footer {
     font-size: 32px;
     font-weight: bold;
   }
+  nav,
+.navbar {
+  padding-left: 35px;
+  padding-right: 35px;
+}
   .navbar-brand {
     padding-left: 10px;
     display: flex;

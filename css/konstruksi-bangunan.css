@@ -157,6 +157,11 @@ footer {
 }
 
 @media (max-width: 763px) {
+  nav,
+  .navbar {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
   .img-fluid {
     width: 100%; 
     height: auto; 
