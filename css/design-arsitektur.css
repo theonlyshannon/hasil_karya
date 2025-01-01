@@ -171,6 +171,11 @@ footer {
 .pendampingan-konstruksi {
   height: 5rem;
 }
+nav,
+.navbar {
+  padding-left: 35px;
+  padding-right: 35px;
+}
   .navbar-brand {
     padding-left: 10px;
     display: flex;
